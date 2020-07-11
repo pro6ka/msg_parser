@@ -1,7 +1,7 @@
 'use strict';
 
 const args = require('yargs').argv;
-const {Scraper, Root, DownloadContent, OpenLinks, CollectContent} = require('nodejs-web-scraper');
+const {Scraper, Root, DownloadContent, OpenLinks, CollectContent} = require('nodejs-web-scraper'); // jshint ignore:line
 const fs = require('fs');
 
 if (!args.url) {
@@ -10,10 +10,10 @@ if (!args.url) {
 }
 
 // const server = require('./server').routes().run();
-const Parser = require('./app/parser');
+//const Parser = require('./app/parser');
 const db = require('./app/models');
 
-const parser = new Parser(args.url);
+//const parser = new Parser(args.url);
 
 const Category = db.category;
 
