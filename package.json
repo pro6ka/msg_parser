@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "parser": "node app.js --url=https://pnevmat24.ru/"
+    "parser": "node app.js --url=https://pnevmat24.ru/",
+    "products": "node products.js --url=https://pnevmat24.ru/"
   },
   "author": "Mikhail Prokhorov <proch-m@yandex.ru>",
   "license": "ISC",
