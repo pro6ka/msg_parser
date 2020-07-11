@@ -25,5 +25,6 @@ db.category = require("./category.model.js")(sequelize, Sequelize);
 db.product = require("./product.model.js")(sequelize, Sequelize);
 db.brand = require("./brand.model.js")(sequelize, Sequelize);
 db.image = require("./image.model.js")(sequelize, Sequelize);
+db.productsList = require("./pageList.model.js")(sequelize, Sequelize);
 
 module.exports = db;
