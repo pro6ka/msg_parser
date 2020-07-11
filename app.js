@@ -43,12 +43,13 @@ const Category = db.category;
     category.addOperation(categoryName);
 
     await scraper.scrape(root);
-    
+
     // write to db
     sections.forEach((section) => {
         Category.create({
             published: 1,
             title: section.categoryName,
+            url: section.address,
             is_root: 1,
             description: section.categoryName,
             createdAt: Date.now(),
@@ -56,9 +57,6 @@ const Category = db.category;
         }).then((sectionData) => {
             console.log(sectionData);
         });
-        console.log('==section==');
-        console.log(section);
-        console.log('==//section==');
     });
 
     fs.writeFile('./results/categories.json', JSON.stringify(sections), () => {});
