@@ -1,0 +1,27 @@
+{
+  "name": "parser",
+  "version": "1.0.0",
+  "description": "app for parse web sites",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parser": "node app.js --url=https://pnevmat24.ru/"
+  },
+  "author": "Mikhail Prokhorov <proch-m@yandex.ru>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.1.0",
+    "nodejs-web-scraper": "^3.1.0",
+    "puppeteer": "^4.0.0",
+    "sequelize": "^5.21.13",
+    "sequelize-file": "^0.3.0",
+    "yargs": "^15.3.1"
+  },
+  "devDependencies": {
+    "jshint": "^2.11.1"
+  }
+}
